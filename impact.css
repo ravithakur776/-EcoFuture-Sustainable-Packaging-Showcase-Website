@@ -1,0 +1,323 @@
+/* style.css for EcoFuture - Enhanced for Impact Page */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f9f6;
+  color: #222;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d6a4f;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #d8f3dc;
+}
+
+.full-screen {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  position: relative;
+}
+
+.hero-img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #1b4332;
+}
+
+h3 {
+  margin-top: 0.5rem;
+  color: #2d6a4f;
+}
+
+.impact-metrics, .timeline, .case-studies, .gallery, .call-to-action {
+  padding: 4rem 2rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.impact-card {
+  background: #e9f5ec;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+}
+
+.impact-card img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+
+.timeline-list {
+  list-style: none;
+  padding-left: 0;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+.timeline-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.timeline-img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 0.5rem;
+}
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.case {
+  background: #fff;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.case:hover {
+  transform: scale(1.02);
+}
+
+.case img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.call-to-action {
+  background: #2d6a4f;
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  border-top: 10px solid #1b4332;
+}
+
+.btn {
+  display: inline-block;
+  background: #95d5b2;
+  color: #1b4332;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #74c69d;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1b4332;
+  color: #fff;
+  font-size: 0.9rem;
+  border-top: 1px solid #95d5b2;
+}
+
+/* Animations */
+.fade-in-up {
+  animation: fadeUp 1s ease-out both;
+}
+
+.fade-in-scale {
+  animation: scaleFade 1.2s ease-out both;
+}
+
+.bounce-in {
+  animation: bounceIn 1.2s ease-out both;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleFade {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* style.css for EcoFuture - Enhanced for Impact Page with Parallax */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f9f6;
+  color: #222;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2d6a4f;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+  color: #d8f3dc;
+}
+
+.full-screen {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  position: relative;
+}
+
+.hero-img {
+  max-width: 90%;
+  height: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.parallax-banner {
+  background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.parallax-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.parallax-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #d8f3dc;
+}
+
+.parallax-content p {
+  font-size: 1.2rem;
+}
+
+/* Remaining existing styles unchanged... */
+
+/* Add previous styles here without repeating */
