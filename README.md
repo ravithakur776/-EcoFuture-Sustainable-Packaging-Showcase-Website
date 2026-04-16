@@ -5,7 +5,7 @@
 ---
 
 ## 🚀 Live Demo
-> Coming soon
+🌐 **[View Live on Vercel](https://eco-future-sustainable-packaging-sh.vercel.app/)**
 
 ---
 
