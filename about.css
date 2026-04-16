@@ -1,0 +1,167 @@
+/* style.css for About Us page */
+
+:root {
+  --primary-color: #2c6e49;
+  --accent-color: #57cc99;
+  --background: #f9fafb;
+  --text-color: #1a1a1a;
+  --light: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+header.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  background: var(--light);
+  box-shadow: 0 2px 6px var(--shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+  color: var(--accent-color);
+}
+
+.full-screen {
+  min-height: 100vh;
+  padding: 8rem 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 800px;
+  margin: 0.5rem auto;
+  font-size: 1.1rem;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  box-shadow: 0 6px 12px var(--shadow);
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  background: var(--light);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px var(--shadow);
+  width: 280px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.feature-item:hover {
+  transform: translateY(-8px);
+}
+
+.testimonials {
+  background: #e9f5ec;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.testimonials blockquote {
+  max-width: 700px;
+  margin: 2rem auto;
+  font-style: italic;
+  font-size: 1.2rem;
+  border-left: 5px solid var(--primary-color);
+  padding-left: 1rem;
+  color: #333;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px var(--shadow);
+}
+
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: #f0f0f0;
+  color: #555;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 1s ease;
+}
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 1s ease;
+}
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 1s ease;
+}
+.bounce-in {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.8s ease;
+}
+
+.in-view {
+  opacity: 1 !important;
+  transform: none !important;
+}

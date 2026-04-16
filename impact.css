@@ -1,0 +1,230 @@
+body {
+  margin: 0;
+  line-height: 1.6;
+  background: #f4f9f6;
+  color: #173327;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.navbar nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.full-screen {
+  text-align: center;
+  padding: 7rem 2rem 4rem;
+}
+
+.hero-img {
+  width: min(92vw, 900px);
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.16);
+}
+
+.parallax-banner {
+  background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 50vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.parallax-content {
+  text-align: center;
+  color: #f1fff6;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 760px;
+}
+
+.parallax-content h2 {
+  color: #d9ffeb;
+}
+
+.impact-metrics,
+.timeline,
+.case-studies,
+.gallery,
+.charts,
+.call-to-action {
+  padding: 4.5rem 2rem;
+}
+
+.impact-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.impact-card {
+  background: #eef8f1;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 1.8rem 1.2rem;
+}
+
+.impact-card img {
+  width: 58px;
+  margin-bottom: 0.8rem;
+}
+
+.timeline-list {
+  margin: 1.8rem auto 0;
+  max-width: 700px;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(23, 51, 39, 0.16);
+}
+
+.timeline-img {
+  width: min(90vw, 760px);
+  display: block;
+  margin: 2rem auto 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+}
+
+.case-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+.case {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: #ffffff;
+}
+
+.case img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.7rem;
+  margin-bottom: 0.9rem;
+}
+
+.gallery-grid {
+  margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 0.7rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+.call-to-action {
+  background: linear-gradient(120deg, #1f5e44, #2d7f58);
+  color: #f1fff8;
+  text-align: center;
+  border-top: 8px solid #1a4e39;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.2rem;
+  padding: 0.75rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #9de3bf;
+  color: #123624;
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #193f2f;
+  color: #e0f6ea;
+}
+
+.fade-in,
+.fade-in-up,
+.fade-in-scale,
+.slide-in-left,
+.slide-in-right,
+.bounce-in {
+  opacity: 0;
+}
+
+.fade-in {
+  transition: opacity 0.8s ease;
+}
+
+.fade-in-up {
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in-scale {
+  transform: scale(0.95);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in-left {
+  transform: translateX(-30px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.slide-in-right {
+  transform: translateX(30px);
+  transition: opacity 0.85s ease, transform 0.85s ease;
+}
+
+.bounce-in {
+  transform: scale(0.75);
+  transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 1, 0.22, 1);
+}
+
+.in-view {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (max-width: 768px) {
+  .full-screen {
+    padding-top: 6.4rem;
+  }
+
+  .parallax-banner {
+    min-height: 42vh;
+    background-attachment: scroll;
+  }
+}
