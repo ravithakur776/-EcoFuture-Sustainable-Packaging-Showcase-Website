@@ -86,7 +86,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-## ✨ Credits
+## ✨ *Credits*
 
 - Images from [Unsplash](https://unsplash.com)
 - Icons from [Flaticon](https://flaticon.com)
