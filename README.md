@@ -27,7 +27,7 @@
 
 ---
 
-## 📁 Pages
+## 📁 *Pages*
 
 - `index.html` – Landing page with product intro
 - `about.html` – Mission, values, team section
@@ -37,7 +37,7 @@
 
 ---
 
-## 🛠️ Built With
+## 🛠️ *Built With*
 
 - **HTML / CSS / JavaScript** – Custom responsive layout and animations
 - **Chart.js** – For visualizing environmental impact
@@ -46,7 +46,7 @@
 
 ---
 
-## 📚 What I Learned
+## 📚 *What I Learned*
 
 - Building multi-page animated websites with semantic HTML5
 - Using JavaScript to power search logic and dynamic suggestions
@@ -55,7 +55,7 @@
 
 ---
 
-## 📦 Folder Structure
+## 📦 *Folder Structure*
 
 ```bash
 EcoFuture/
@@ -74,13 +74,13 @@ EcoFuture/
 
 ---
 
-## 🤝 Contributing
+## 🤝 *Contributing*
 
 Feel free to fork, submit PRs, or suggest ideas for improvement.
 
 ---
 
-## 📝 License
+## 📝 *License*
 
 This project is open-source and available under the [MIT License](LICENSE).
 
