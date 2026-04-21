@@ -1,4 +1,4 @@
-# 🌍 *EcoFuture* — Sustainable Packaging Showcase Website
+# 🌍 *EcoFuture* — **Sustainable Packaging Showcase Website**
 
 **EcoFuture** is a fully responsive, animated, multi-page website that presents a rich catalog of eco-friendly packaging solutions. Built for learning and showcasing modern front-end development techniques, it simulates a real-world e-commerce product platform for sustainable innovation.
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🧩 Features
+## 🧩 *Features*
 
 - 🌿 Animated hero section and scroll-triggered transitions
 - 📦 20+ sustainable product listings
